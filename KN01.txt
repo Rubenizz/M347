@@ -39,8 +39,10 @@ C)
 D)
 1. Nginx Herunterladen
 	- docker pull nginx:latest
+Der Befehl docker pull lädt das Nginx Image mit dem Tag latest herunter.
 2. Nginx in das eigene repo kopieren
 	- docker tag nginx:latest rubenkpt/m347:nginx
+Der Befehl docker tag erstellt eine Kopie des Images mit dem neuen Repository und Tag Namen.
 3. MariaDb herunterladen
 	- docker pull mariadb:latest
 4. MariaDb in das eigene repo kopieren
