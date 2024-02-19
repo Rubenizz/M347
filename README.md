@@ -18,3 +18,5 @@ Modul 347 - Nussle
 [Alle verwendeten Befehle](https://github.com/Rubenizz/M347/blob/main/KN01.txt)
 
 ### C) Registry und Repository
+
+<img width="1168" alt="image" src="https://github.com/Rubenizz/M347/assets/112400838/c1ded503-0432-4fe1-90fa-c5805837f2bc">
