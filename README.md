@@ -20,3 +20,7 @@ Modul 347 - Nussle
 ### C) Registry und Repository
 
 <img width="1168" alt="image" src="https://github.com/Rubenizz/M347/assets/112400838/c1ded503-0432-4fe1-90fa-c5805837f2bc">
+
+### D) Privates Repository
+
+<img width="1136" alt="image" src="https://github.com/Rubenizz/M347/assets/112400838/c3af30df-6569-47f1-a7fa-3dea3c87df5f">
