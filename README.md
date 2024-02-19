@@ -7,5 +7,7 @@ Modul 347 - Nussle
 
 ### B) Docker Command Line Interface
 
+### NGINX IMAGE
+
 <img width="1169" alt="image" src="https://github.com/Rubenizz/M347/assets/112400838/718a2143-e301-48ca-9f3c-0cac34e766f7">
 
