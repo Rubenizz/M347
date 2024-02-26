@@ -30,7 +30,7 @@ Modul 347 - Nussle
 
 ## KN02
 
-## A) DOckerfile 1
+## A) Dockerfile 1
 [Dokumentiertes Dockerfile](https://github.com/Rubenizz/M347/blob/main/Dokumentiertes_Dockerfile.txt)
 
 [Dockerfile](https://github.com/Rubenizz/M347/blob/main/Dockerfile)
