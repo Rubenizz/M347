@@ -32,4 +32,4 @@ Modul 347 - Nussle
 
 [DOkumentiertes Dockerfile](https://github.com/Rubenizz/M347/blob/main/Dokumentiertes_Dockerfile.txt)
 
-[Dockerfile](https://github.com/Rubenizz/M347/blob/main/Dokumentiertes_Dockerfile.txt)
+[Dockerfile](https://github.com/Rubenizz/M347/blob/main/Dockerfile)
