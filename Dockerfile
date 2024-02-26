@@ -1,7 +1,7 @@
 FROM nginx
 
-WORKDIR C:/Modul347
+WORKDIR usr/share/nginx/html
 
-COPY C:/Modul347/helloworld.html .
+COPY helloworld.html .
 
 EXPOSE 80
