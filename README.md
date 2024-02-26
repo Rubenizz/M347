@@ -30,6 +30,15 @@ Modul 347 - Nussle
 
 ## KN02
 
-[DOkumentiertes Dockerfile](https://github.com/Rubenizz/M347/blob/main/Dokumentiertes_Dockerfile.txt)
+[Dokumentiertes Dockerfile](https://github.com/Rubenizz/M347/blob/main/Dokumentiertes_Dockerfile.txt)
 
 [Dockerfile](https://github.com/Rubenizz/M347/blob/main/Dockerfile)
+
+### Notwendige Docker Befehle
+- docker tag kn02a rubenkpt/m347:kn02a
+- docker push rubenkpt/m347:kn02a
+- docker run -p 8888:80 rubenkpt/m347:kn02a
+
+### Screenshot vom Docker Desktop
+
+<img width="1162" alt="image" src="https://github.com/Rubenizz/M347/assets/112400838/f96864f4-b63d-4f1a-926b-540a2f526a34">
