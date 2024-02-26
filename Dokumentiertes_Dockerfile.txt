@@ -1,0 +1,3 @@
+FROM nginx #Dieses Image wird verwendet
+COPY  static-html-directory /var/www/html  #Der Inhalt von diesem File wird in das Image kopiert
+EXPOSE 80 #Dies ist der Port der verwendet wird
