@@ -29,3 +29,5 @@ Modul 347 - Nussle
 
 
 ## KN02
+
+[DOkumentiertes Dockerfile](https://github.com/Rubenizz/M347/blob/main/KN01.txt)
