@@ -26,3 +26,6 @@ Modul 347 - Nussle
 ### D) Privates Repository
 
 <img width="1136" alt="image" src="https://github.com/Rubenizz/M347/assets/112400838/c3af30df-6569-47f1-a7fa-3dea3c87df5f">
+
+
+## KN02
