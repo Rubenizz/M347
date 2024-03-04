@@ -86,4 +86,4 @@ EXPOSE 8080
 
 
 https://github.com/Rubenizz/M347/blob/main/db.php
-
+https://github.com/Rubenizz/M347/blob/main/info.php
