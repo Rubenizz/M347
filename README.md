@@ -67,6 +67,7 @@ EXPOSE 3306
 <img width="1165" alt="image" src="https://github.com/Rubenizz/M347/assets/112400838/90e050fc-8456-4dbf-82b2-d2f1a428763d">
 
 ### Screenshort db.php
+<img width="1131" alt="image" src="https://github.com/Rubenizz/M347/assets/112400838/25af196f-35ca-4e13-9e8a-22b766583e3f">
 
 ### Dockerfile für den Web Container
 FROM php:8.0-apache
