@@ -85,3 +85,5 @@ EXPOSE 8080
 - docker run -d -p 80:80 --name kn02b_web --link kn02b_db kn02b-web
 
 
+https://github.com/Rubenizz/M347/blob/main/db.php
+
