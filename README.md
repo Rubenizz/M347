@@ -50,5 +50,19 @@ Modul 347 - Nussle
 <img width="1168" alt="image" src="https://github.com/Rubenizz/M347/assets/112400838/40c10f6f-cae5-401b-bd89-2faa4aafc1bf">
 
 ## B) Dockerfile 2
+### Telnet Befehl
+<img width="672" alt="image" src="https://github.com/Rubenizz/M347/assets/112400838/4afba2fd-b109-4926-aae6-75b5e3c98638">
 
 
+### Dockerfile für DB Container:
+FROM mariadb:latest
+
+ENV MARIADB_ROOT_PASSWORD="123"
+
+EXPOSE 3306
+### DB: docker build und docker run Befehle für Ihren DB-Container
+
+- docker build -t kn02b-db .
+- docker run -d -p 3306:3306 --name kn02b_db kn02b-db
+
+### Screenshort db.php
