@@ -63,4 +63,24 @@ EXPOSE 3306
 - docker build -t kn02b-db .
 - docker run -d -p 3306:3306 --name kn02b_db kn02b-db
 
+### Screenshort info.php
+<img width="1165" alt="image" src="https://github.com/Rubenizz/M347/assets/112400838/90e050fc-8456-4dbf-82b2-d2f1a428763d">
+
 ### Screenshort db.php
+
+### Dockerfile für den Web Container
+FROM php:8.0-apache
+ 
+RUN docker-php-ext-install mysqli
+ 
+COPY info.php /var/www/html/
+COPY db.php /var/www/html/
+ 
+EXPOSE 8080
+
+###Web: docker build und docker run Befehle für Ihren Web-Container
+
+- docker build -t kn02b-web .
+- docker run -d -p 80:80 --name kn02b_web --link kn02b_db kn02b-web
+
+
