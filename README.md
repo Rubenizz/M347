@@ -77,7 +77,7 @@ RUN docker-php-ext-install mysqli
 COPY info.php /var/www/html/
 COPY db.php /var/www/html/
  
-EXPOSE 8080
+EXPOSE 80
 
 ### Web: docker build und docker run Befehle für Ihren Web-Container
 
