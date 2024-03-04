@@ -78,7 +78,7 @@ COPY db.php /var/www/html/
  
 EXPOSE 8080
 
-###Web: docker build und docker run Befehle für Ihren Web-Container
+### Web: docker build und docker run Befehle für Ihren Web-Container
 
 - docker build -t kn02b-web .
 - docker run -d -p 80:80 --name kn02b_web --link kn02b_db kn02b-web
