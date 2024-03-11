@@ -102,3 +102,20 @@ https://github.com/Rubenizz/M347/blob/main/info.php
 ```docker run --name=busybox3 -itd --network=bridge busybox```
 
 ```docker run --name=busybox4 -itd --network=bridge busybox```
+
+### 1)
+busybox1:
+- Ip:172.21.0.2
+- Gateway:172.21.0.1
+busybox2:
+- Ip:172.21.0.3
+- Gateway:172.21.0.1
+busybox3:
+- Ip:172.17.0.2
+- Gateway:172.17.0.1
+busybox4:
+- Ip:172.17.0.3
+- Gateway:172.17.0.1
+
+### 2)
+
