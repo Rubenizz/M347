@@ -128,3 +128,8 @@ busybox4:
 
 Die Befehle: ```ping busybox2``` und ```ping IP-von-busybox2``` funktionieren, da diese den gleichen Default-Gateway haben wie busybox1 (172.21.0.1)
 
+### 3)
+
+<img width="341" alt="image" src="https://github.com/Rubenizz/M347/assets/112400838/d4effb57-b983-488b-a649-c8a9e933a155">
+
+Der Befehl ```ping IP-von-busybox4``` funktioniert. (Gateway: 172.17.0.1)
