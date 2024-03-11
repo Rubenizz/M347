@@ -95,13 +95,13 @@ https://github.com/Rubenizz/M347/blob/main/info.php
 
 ```docker pull busybox:latest```
 
-```docker run --name=busybox1 -itd --network=tbz busybox```
+```docker run --name=busybox1 -it --network=tbz busybox```
 
-```docker run --name=busybox2 -itd --network=tbz busybox```
+```docker run --name=busybox2 -it --network=tbz busybox```
 
-```docker run --name=busybox3 -itd --network=bridge busybox```
+```docker run --name=busybox3 -it --network=bridge busybox```
 
-```docker run --name=busybox4 -itd --network=bridge busybox```
+```docker run --name=busybox4 -it --network=bridge busybox```
 
 ### 1)
 busybox1:
@@ -136,4 +136,4 @@ Der Befehl ```ping IP-von-busybox4``` funktioniert. (Gateway: 172.17.0.1)
 
 
 In Kn02 befanden sich die beiden Docker Container im Bridge Netzwerk. Sie konnten zusammen über den Link kommunizieren.
-
+Sie kommunizieren zusammen über den Server und brauchen keinen link mehr.
