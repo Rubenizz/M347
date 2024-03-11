@@ -108,7 +108,7 @@ busybox1:
 - Ip:172.21.0.2
 - Gateway:172.21.0.1
   
--busybox2:
+usybox2:
 - Ip:172.21.0.3
 - Gateway:172.21.0.1
   
