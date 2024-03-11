@@ -126,3 +126,5 @@ busybox4:
 
 <img width="320" alt="image" src="https://github.com/Rubenizz/M347/assets/112400838/95e29fd8-2de8-483a-87ab-ad19b69cb090">
 
+Die Befehle: ```ping busybox2``` und ```ping IP-von-busybox2``` funktionieren, da diese den gleichen Default-Gateway haben wie busybox1 (172.21.0.1)
+
