@@ -92,13 +92,8 @@ https://github.com/Rubenizz/M347/blob/main/info.php
 ## KN03
 
 ```docker network create tbz```
-
-docker pull busybox:latest
-
-docker run --name=busybox1 -itd --network=tbz busybox
-
-docker run --name=busybox2 -itd --network=tbz busybox
-
-docker run --name=busybox3 -itd --network=bridge busybox
-
-docker run --name=busybox4 -itd --network=bridge busybox
+```docker pull busybox:latest```
+```docker run --name=busybox1 -itd --network=tbz busybox```
+```docker run --name=busybox2 -itd --network=tbz busybox```
+```docker run --name=busybox3 -itd --network=bridge busybox```
+```docker run --name=busybox4 -itd --network=bridge busybox```
