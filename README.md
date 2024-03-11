@@ -133,3 +133,7 @@ Die Befehle: ```ping busybox2``` und ```ping IP-von-busybox2``` funktionieren, d
 <img width="341" alt="image" src="https://github.com/Rubenizz/M347/assets/112400838/d4effb57-b983-488b-a649-c8a9e933a155">
 
 Der Befehl ```ping IP-von-busybox4``` funktioniert. (Gateway: 172.17.0.1)
+
+
+In Kn02 befanden sich die beiden Docker Container im Bridge Netzwerk. Sie konnten zusammen über den Link kommunizieren.
+
