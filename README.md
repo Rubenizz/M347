@@ -122,3 +122,7 @@ busybox4:
 
 ### 2)
 
+<img width="308" alt="image" src="https://github.com/Rubenizz/M347/assets/112400838/1c2a6faf-73c5-4581-a6d5-66f1119aaa32">
+
+<img width="320" alt="image" src="https://github.com/Rubenizz/M347/assets/112400838/95e29fd8-2de8-483a-87ab-ad19b69cb090">
+
