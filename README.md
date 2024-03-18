@@ -159,3 +159,6 @@ Der Befehl ```ping IP-von-busybox4``` funktioniert. (Gateway: 172.17.0.1)
 
 In Kn02 befanden sich die beiden Docker Container im Bridge Netzwerk. Sie konnten zusammen über den Link kommunizieren.
 Sie kommunizieren zusammen über den Server und brauchen keinen link mehr.
+
+
+## KN04
