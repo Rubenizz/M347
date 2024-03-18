@@ -4,8 +4,6 @@
    - [A) Instalation](#a-instalation)
    - [B) Docker Command Line Interface](#b-docker-command-line-interface)
      - [NGINX IMAGE](#nginx-image)
-     - [Registry und Repository](#registry-und-repository)
-     - [Privates Repository](#privates-repository)
 2. **[KN02](#kn02)**
    - [A) Dockerfile 1](#a-dockerfile-1)
      - [Notwendige Docker Befehle](#notwendige-docker-befehle)
