@@ -8,7 +8,6 @@
    - [A) Dockerfile 1](#a-dockerfile-1)
      - [Notwendige Docker Befehle](#notwendige-docker-befehle)
      - [Screenshot vom Docker Desktop](#screenshot-vom-docker-desktop)
-     - [Screenshot von der Hello World Seite](#screenshot-von-der-hello-world-seite)
    - [B) Dockerfile 2](#b-dockerfile-2)
      - [Telnet Befehl](#telnet-befehl)
      - [Dockerfile für DB Container](#dockerfile-für-db-container)
