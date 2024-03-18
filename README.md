@@ -17,9 +17,7 @@
      - [Dockerfile für den Web Container](#dockerfile-für-den-web-container)
        - [Web: docker build und docker run Befehle für Ihren Web-Container](#web-docker-build-und-docker-run-befehle-für-ihren-web-container)
 3. **[KN03](#kn03)**
-   - [Befehle zur Erstellung und Verwaltung von Docker-Netzwerken](#befehle-zur-erstellung-und-verwaltung-von-docker-netzwerken)
-   - [Beschreibung der Konfiguration und Interaktion von Containern in verschiedenen Netzwerken](#beschreibung-der-konfiguration-und-interaktion-von-containern-in-verschiedenen-netzwerken)
-
+  
 
 
 [Alle verwendeten Befehle](https://github.com/Rubenizz/M347/blob/main/KN01.txt)
