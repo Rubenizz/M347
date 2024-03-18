@@ -1,3 +1,30 @@
+## Inhaltsverzeichnis
+
+1. **[KN01](#kn01)**
+   - [A) Instalation](#a-instalation)
+   - [B) Docker Command Line Interface](#b-docker-command-line-interface)
+     - [NGINX IMAGE](#nginx-image)
+     - [Registry und Repository](#registry-und-repository)
+     - [Privates Repository](#privates-repository)
+2. **[KN02](#kn02)**
+   - [A) Dockerfile 1](#a-dockerfile-1)
+     - [Notwendige Docker Befehle](#notwendige-docker-befehle)
+     - [Screenshot vom Docker Desktop](#screenshot-vom-docker-desktop)
+     - [Screenshot von der Hello World Seite](#screenshot-von-der-hello-world-seite)
+   - [B) Dockerfile 2](#b-dockerfile-2)
+     - [Telnet Befehl](#telnet-befehl)
+     - [Dockerfile für DB Container](#dockerfile-für-db-container)
+       - [DB: docker build und docker run Befehle für Ihren DB-Container](#db-docker-build-und-docker-run-befehle-für-ihren-db-container)
+       - [Screenshort info.php](#screenshort-infophp)
+       - [Screenshort db.php](#screenshort-dbphp)
+     - [Dockerfile für den Web Container](#dockerfile-für-den-web-container)
+       - [Web: docker build und docker run Befehle für Ihren Web-Container](#web-docker-build-und-docker-run-befehle-für-ihren-web-container)
+3. **[KN03](#kn03)**
+   - [Befehle zur Erstellung und Verwaltung von Docker-Netzwerken](#befehle-zur-erstellung-und-verwaltung-von-docker-netzwerken)
+   - [Beschreibung der Konfiguration und Interaktion von Containern in verschiedenen Netzwerken](#beschreibung-der-konfiguration-und-interaktion-von-containern-in-verschiedenen-netzwerken)
+
+
+
 [Alle verwendeten Befehle](https://github.com/Rubenizz/M347/blob/main/KN01.txt)
 
 
