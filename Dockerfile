@@ -1,7 +1,8 @@
-FROM nginx
+FROM php:8.0-apache
 
-WORKDIR usr/share/nginx/html
+RUN docker-php-ext-install mysqli
 
-COPY helloworld.html .
+COPY info.php /var/www/html/
+COPY db.php /var/www/html/
 
 EXPOSE 80
