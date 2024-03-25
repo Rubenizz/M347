@@ -173,3 +173,4 @@ Sie kommunizieren zusammen über den Server und brauchen keinen link mehr.
 
 <img width="1170" alt="image" src="https://github.com/Rubenizz/M347/assets/112400838/951974ce-0e87-46e9-ab5f-a14ee9b33918">
 
+https://github.com/Rubenizz/M347/blob/main/Dockerfile
