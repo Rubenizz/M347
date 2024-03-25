@@ -168,3 +168,8 @@ Sie kommunizieren zusammen über den Server und brauchen keinen link mehr.
 ### Info.php
 
 <img width="1170" alt="image" src="https://github.com/Rubenizz/M347/assets/112400838/a4fe3757-d1b2-4c4d-9268-a31d1019db52">
+
+### db.php
+
+<img width="1170" alt="image" src="https://github.com/Rubenizz/M347/assets/112400838/951974ce-0e87-46e9-ab5f-a14ee9b33918">
+
