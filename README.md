@@ -163,3 +163,4 @@ Sie kommunizieren zusammen über den Server und brauchen keinen link mehr.
 
 ## KN04
 
+<img width="913" alt="image" src="https://github.com/Rubenizz/M347/assets/112400838/a4110c04-15ed-4b05-97f3-3d7238bb3ac6">
