@@ -223,3 +223,6 @@ networks:
 Der Fehler tritt auf, weil wir die Werte für den Datenbank Login fest codiert haben. Dadurch können wir keine einfache Verbindung herstellen. Eine Lösung könnte darin bestehen, in der Docker-Compose-Datei eine Umgebungsvariable zu definieren und in der Datei "db.php" die Werte dieser environment variablen zu verwenden. Auf diese Weise ist es wesentlich einfacher, Einstellungen anzupassen.
 
 ## B)
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/65c6709c-a03f-4d91-93c9-36afe8afefba)
+
