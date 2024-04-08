@@ -224,5 +224,121 @@ Der Fehler tritt auf, weil wir die Werte für den Datenbank Login fest codiert h
 
 ## B)
 
-![image](https://github.com/Rubenizz/M347/assets/112400838/65c6709c-a03f-4d91-93c9-36afe8afefba)
+![image](https://github.com/Rubenizz/M347/assets/112400838/12f73804-fa3c-44d7-8a16-05bf7d7df942)
 
+![image](https://github.com/Rubenizz/M347/assets/112400838/f17b8a4a-4a3c-4d63-b536-1a4575191e22)
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/309c1cb6-c3e0-401e-b8e4-89c866c20dc2)
+
+#### cloud init Datei
+
+```
+#cloud-config
+# source: https://gist.github.com/syntaqx/9dd3ff11fb3d48b032c84f3e31af9163
+users:
+  - name: ubuntu
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    home: /home/ubuntu
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCUBo+qnNu5xxM9vfz4C04M36FHxHNrEMdm5TkFj1/SfVtqunlUOeMpu7nFCZZKnX8HYwf/MkjcBiTYAgncxku8grwl6XuW/pcvmb6/ghSIaw4xtRRSzit7omqJ5d8kXB3+Nd1aaMHsjfly4nkaqswhySVXQqr8Hw6DbWVw8jLLVKEE+5NZHY33hJkhJwK4blCllsGpmQaKi1qxjsN0hZOWNK01iJAydwD8t2xJ0NOYbq8Qas5IyPnRN7SPxvEhIP6WLQ6Ym6Dmf8FwNW1cHLTKabgjzt5f/HKUkKS89dPd3fn4nnFli1BOMECGUIvVlOw2pQNri7+04OOfn2FGlqr5  teacher
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQClTwSwEolWaVuXiakhYqehF1X9dOi8iwNCS/PPIgisSd7dToLsD74+fOcUrocbLZMIwBJWDKComo8a0VKOVXug0RqXOIkOliIHNsaXurkkBuc3WtVtz2SQZJEkGnCbmHp2NBGutEfJqTTEfrQxaj3MW20hQRxi+PDhvagH1h5KlIwCEiL3ObJR/8DR8Pq4QDyoBosCHm3BoPKvHoEZ8wh1ohL7K+uD0Yo/R7iNEQpmTrdqPzYv8rSPQCVheoMlMu2QykQwtEUpM1IZmYgAkz1oDhaI8Pv0tyFB4XMcjs8WcroNBavD4WxoVuabWd9Sv03zXAX2Q6ZtyylDRnT+4AOz ruben
+ssh_pwauth: false
+disable_root: false
+package_update: true
+package_upgrade: true
+groups:
+  - docker
+system_info:
+  default_user:
+    groups: [docker]
+packages:
+  - apt-transport-https
+  - ca-certificates
+  - curl
+  - gnupg
+  - lsb-release
+  - unattended-upgrades
+final_message: "The system is finally up, after $UPTIME seconds"
+write_files:
+  - path: /home/ubuntu/src/db.php
+    permissions: "0644"
+    content: |
+      <?php
+        //database
+        $servername = "m347-kn04a-db"; // Private IP Adresse des DB Server
+        $username = "root";
+        $password = "example";
+        //$dbname = "example-database";
+
+        // Create connection
+        $conn = new mysqli($servername, $username, $password);//, $dbname);
+        // Check connectionsa<
+        if ($conn->connect_error) {
+          die("Connection failed: " . $conn->connect_error);
+        }
+        $sql = "select Host, User from mysql.user;";
+        $result = $conn->query($sql);
+        while($row = $result->fetch_assoc()){
+          echo($row["Host"] . " / " . $row["User"] . "<br />");
+        }
+        //var_dump($result);
+      ?>
+  - path: /home/ubuntu/src/info.php
+    permissions: "0644"
+    content: |
+      <?php
+        phpinfo();
+      ?>
+  - path: /home/ubuntu/dockerfile
+    permissions: "0644"
+    content: |
+      FROM php:8.0-apache
+      WORKDIR /var/www/html/
+      COPY src .
+      EXPOSE 80
+      RUN ["docker-php-ext-install", "mysqli"]
+  - path: /home/ubuntu/docker-compose.yml
+    permissions: "0644"
+    content: |
+      version: '3.8'
+      name: kn04-compose
+      services:
+        database:
+          image: mariadb:latest
+          container_name: m347-kn04a-db
+          ports:
+            - "3306:3306"
+          environment:
+            - MARIADB_ROOT_PASSWORD=example
+          networks:
+            - kn04-network
+        web:
+          build: .
+          container_name: m347-kn04a-web
+          ports:
+            - "80:80"
+          depends_on:
+            - database
+          networks:
+            - kn04-network
+      networks:
+        kn04-network:
+          driver: bridge
+          ipam:
+            config:
+              - subnet: 172.10.0.0/16
+                ip_range: 172.10.5.0/24
+                gateway: 172.10.5.254
+runcmd:
+  - mkdir -p /etc/apt/keyrings
+  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+  - echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
+  - apt-get update
+  - apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+  - systemctl enable docker
+  - systemctl start docker
+  - cd /home/ubuntu
+  - sudo docker compose up -d
+```
