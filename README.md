@@ -348,10 +348,17 @@ runcmd:
 #### Liste der Befehle:
 Docker mit dem bind-mount erstellen: ```docker run -d --name kn05 -v C:\Users\Ruben\TBZ_m347\KN05:/mnt nginx```
 
+Jetzt ist noch kein File vorhanden
+
 ![image](https://github.com/Rubenizz/M347/assets/112400838/52921e6d-dfb6-4128-9777-9952e0d8c91b)
 
-Jetzt ist noch kein File vorhanden
+Jetzt ist ein File vorhanden
 
 ![image](https://github.com/Rubenizz/M347/assets/112400838/19551573-70eb-48cf-b8a9-ca8e66b1179a)
 
-Jetzt ist ein File vorhanden
+Inhalt des File: 
+```
+#!/bin/bash
+
+echo "Ruben Schneebeli Skript"
+```
