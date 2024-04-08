@@ -380,7 +380,46 @@ echo "Hello from container 1" >> /data/test.txt
 docker exec -it container2 bash
 echo "Hello from container 2" >> /data/test.txt
 ```
-Im Bash com zweiten COntainer
+Im Bash vom zweiten Container
 ```cat /data/test.txt```
 
 ![image](https://github.com/Rubenizz/M347/assets/112400838/39ba44de-2f6a-48af-b055-e3072af50682)
+
+## C) 
+
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/25fc0f4b-43ee-49ff-892a-7c90005d5efd)
+
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/40623731-80a9-4097-a2e6-800c7131360d)
+
+
+docker-compose File
+```
+version: '3.8'
+name: kn05-compose
+services:
+  container-1:
+    image: nginx:latest
+    container_name: kn05c-con-1
+    volumes:
+      - type: volume
+        source: ruben-volume
+        target: "/var/www/html/"
+      - type: bind
+        source: "C:/Users/Ruben/TBZ_m347/KN05/compose"
+        target: /usr/share/nginx/html
+      - type: tmpfs
+        target: "/random-dir"
+    ports:
+      - "2100:80"
+  container-2:
+    image: nginx:latest
+    container_name: kn05c-con-2
+    volumes:
+      - ruben-volume:/usr/share/nginx/html:rw
+    ports:
+      - "2200:80"
+volumes:
+  ruben-volume: {}
+```
