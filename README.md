@@ -178,3 +178,44 @@ https://github.com/Rubenizz/M347/blob/main/Dockerfile
 https://github.com/Rubenizz/M347/blob/main/docker-compose.yml
 
 ### Teil b)
+#### info.php
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/5ed1f421-be81-4f90-a17c-c57f0d56cb07)
+
+#### db.php
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/96e0d61a-bb95-40c7-b76d-3fbff02bc2c2)
+
+#### Docker compose file
+```
+version: '3.8'
+services:
+  database:
+    image: rubenkpt/m347:kn02db
+    container_name: m347-kn04a-db
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    networks:
+      kn04-network:
+        ipv4_address: 172.10.5.2
+  web: 
+    image: rubenkpt/m347:kn02web
+    container_name: m347-kn04a-web
+    ports:
+      - "5600:80"
+    depends_on:
+      - database
+    networks:
+      kn04-network:
+        ipv4_address: 172.10.5.3
+
+networks:
+  kn04-network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.10.0.0/16
+          ip_range: 172.10.5.0/24
+          gateway: 172.10.5.254
+```
