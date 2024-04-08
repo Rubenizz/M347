@@ -364,3 +364,23 @@ Inhalt des File:
 
 echo "Ruben Schneebeli Skript"
 ```
+
+## B)
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/658aeaf0-d73d-4651-bf06-713caa8b35e3)
+
+Commands: 
+```
+docker run -d --name container1 -v kn05Volume:/data nginx
+docker run -d --name container2 -v kn05Volume:/data nginx
+
+docker exec -it container1 bash
+echo "Hello from container 1" >> /data/test.txt
+
+docker exec -it container2 bash
+echo "Hello from container 2" >> /data/test.txt
+```
+Im Bash com zweiten COntainer
+```cat /data/test.txt```
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/39ba44de-2f6a-48af-b055-e3072af50682)
