@@ -176,3 +176,5 @@ Sie kommunizieren zusammen über den Server und brauchen keinen link mehr.
 https://github.com/Rubenizz/M347/blob/main/Dockerfile
 
 https://github.com/Rubenizz/M347/blob/main/docker-compose.yml
+
+### Teil b)
