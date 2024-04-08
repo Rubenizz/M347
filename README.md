@@ -221,3 +221,5 @@ networks:
 ```
 
 Der Fehler tritt auf, weil wir die Werte für den Datenbank Login fest codiert haben. Dadurch können wir keine einfache Verbindung herstellen. Eine Lösung könnte darin bestehen, in der Docker-Compose-Datei eine Umgebungsvariable zu definieren und in der Datei "db.php" die Werte dieser environment variablen zu verwenden. Auf diese Weise ist es wesentlich einfacher, Einstellungen anzupassen.
+
+## B)
