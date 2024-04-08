@@ -178,15 +178,15 @@ https://github.com/Rubenizz/M347/blob/main/Dockerfile
 https://github.com/Rubenizz/M347/blob/main/docker-compose.yml
 
 ### Teil b)
-#### info.php
+### info.php
 
 ![image](https://github.com/Rubenizz/M347/assets/112400838/5ed1f421-be81-4f90-a17c-c57f0d56cb07)
 
-#### db.php
+### db.php
 
 ![image](https://github.com/Rubenizz/M347/assets/112400838/96e0d61a-bb95-40c7-b76d-3fbff02bc2c2)
 
-#### Docker compose file
+### Docker compose file
 ```
 version: '3.8'
 services:
