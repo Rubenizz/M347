@@ -456,6 +456,4 @@ Node vom Cluster entfernen:
 
 #### Status:
 
-![Uploading image.png…]()
-
 ![image](https://github.com/Rubenizz/M347/assets/112400838/2e29a4c0-d2ec-4cd9-8747-1aa420138752)
