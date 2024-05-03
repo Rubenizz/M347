@@ -430,14 +430,32 @@ volumes:
 
 ![image](https://github.com/Rubenizz/M347/assets/112400838/e59ebef8-f524-4b6f-a306-47d539b1f5cc)
 
-#### Node1 (Worker):
-![image](https://github.com/Rubenizz/M347/assets/112400838/8f830b0a-4186-451e-9d59-a56d4045fe47)
+#### Node1:
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/bde47db1-2b08-4c90-8457-f9e67f132d49)
+
+
+#### Node2:
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/58f5455e-c4a9-49ba-9fc3-2a5e14b2eab8)
 
 #### Status:
-![image](https://github.com/Rubenizz/M347/assets/112400838/2e29a4c0-d2ec-4cd9-8747-1aa420138752)
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/b8c0a273-9732-41fa-87c4-b9f52f76d3fd)
+
 
 Node vom Cluster entfernen:
 
 ```microk8s leave```
 
 ![image](https://github.com/Rubenizz/M347/assets/112400838/17cc6d4f-eb1e-4e5d-9835-305b4fd10b6c)
+
+#### Node1 (Worker):
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/8f830b0a-4186-451e-9d59-a56d4045fe47)
+
+#### Status:
+
+![Uploading image.png…]()
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/2e29a4c0-d2ec-4cd9-8747-1aa420138752)
