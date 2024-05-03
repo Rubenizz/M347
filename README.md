@@ -423,3 +423,18 @@ services:
 volumes:
   ruben-volume: {}
 ```
+
+
+## KN05
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/e59ebef8-f524-4b6f-a306-47d539b1f5cc)
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/8f830b0a-4186-451e-9d59-a56d4045fe47)
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/2e29a4c0-d2ec-4cd9-8747-1aa420138752)
+
+Node vom Cluster entfernen:
+
+```microk8s leave```
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/17cc6d4f-eb1e-4e5d-9835-305b4fd10b6c)
