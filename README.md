@@ -457,3 +457,7 @@ Node vom Cluster entfernen:
 #### Status:
 
 ![image](https://github.com/Rubenizz/M347/assets/112400838/2e29a4c0-d2ec-4cd9-8747-1aa420138752)
+
+Der Unterschied ist, dass wenn nur eine Node existiert ist es kein High-Availability Cluster, da es bei einem Ausfall keine andere Node gibt, welche die Arbeit übernehmen kann. Dazu sieht man die Ip Adressen der verbundenen Nodes.
+Es bechreibt den status von kubernetes und zeigt, wer alles verbunden ist und was es für Rolle es nimmt. Es zeigt auch, was für addon wurden dazu gegeben.
+
