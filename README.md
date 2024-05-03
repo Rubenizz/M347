@@ -425,7 +425,7 @@ volumes:
 ```
 
 
-## KN05
+## KN06
 #### Master:
 
 ![image](https://github.com/Rubenizz/M347/assets/112400838/e59ebef8-f524-4b6f-a306-47d539b1f5cc)
@@ -461,3 +461,7 @@ Node vom Cluster entfernen:
 Der Unterschied ist, dass wenn nur eine Node existiert ist es kein High-Availability Cluster, da es bei einem Ausfall keine andere Node gibt, welche die Arbeit übernehmen kann. Dazu sieht man die Ip Adressen der verbundenen Nodes.
 Es bechreibt den status von kubernetes und zeigt, wer alles verbunden ist und was es für Rolle es nimmt. Es zeigt auch, was für addon wurden dazu gegeben.
 
+
+mit microk8s bearbeitet man einzelne node in einem Cluster. Mit kubectl bearbeitet man das ganze Kluster, dass mehrere nodes enthaltet. Da muss man microk8s kubectl anschrieben, damit man das Cluster bearbeiten kann.
+
+## KN07
