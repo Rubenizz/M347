@@ -465,4 +465,49 @@ mit microk8s bearbeitet man einzelne node in einem Cluster. Mit kubectl bearbeit
 
 ## KN07
 
+#### Pod / Replica
+Ein Pod ist eine Gruppe von einem oder mehreren Containern, die eng zusammenarbeiten und gemeinsame Ressourcen und ein gemeinsames Netzwerk teilen.
+Replikas sind Kopien eines Pods, die es ermöglichen, die Verfügbarkeit und Skalierbarkeit einer Anwendung zu steuern, indem sie die Anzahl der laufenden Instanzen eines Pods definieren.
+
+#### Service / Deployment
+Ein Deployment beschreibt, wie Pods bereitgestellt und aktualisiert werden sollen, während ein Service einen stabilen Netzwerkzugriff auf eine Gruppe von Pods bereitstellt.
+
+#### Ingress
+Ingress löst das Problem des externen Zugriffs auf Dienste innerhalb eines Kubernetes-Clusters, indem es den HTTP- und HTTPS-Routingverkehr basierend auf Regeln an verschiedene Dienste innerhalb des Clusters weiterleitet. Kurz gesagt, Ingress ermöglicht es, dass externe Anfragen über eine einzelne IP-Adresse und einen bestimmten Port auf verschiedene Dienste innerhalb des Clusters geroutet werden können, basierend auf den Anforderungen und Konfigurationen.
+
+#### Statefulset
+StatefulSets sind für die Bereitstellung von zustandsbehafteten Anwendungen in Kubernetes geeignet, die eine stabile Netzwerkidentität und/oder persistente Speicherung benötigen.
+
 ![image](https://github.com/Rubenizz/M347/assets/112400838/5220f60b-a98e-478c-80ec-45d199fa0ed5)
+
+``` microk8s kubectl describe service webapp-service ```
+
+#### Master:
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/c0df8ce5-f491-409f-b848-c97ce326d876)
+
+#### Node1:
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/7915d2c2-1874-41b5-a2c4-d9c52657444c)
+
+#### Mongo DB service 
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/f93022f8-bb17-4111-a245-632a6e0c5165)
+
+Es zeigt die info der MongoDB service
+
+#### Master
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/c0df8ce5-f491-409f-b848-c97ce326d876)
+
+#### Node1
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/7f581c4c-e0e2-44e9-af83-4003f4e7c70b)
+
+Ich musste nur die Ip adresse ändern zu der öffentlichen Ip von Node 1
+
+Das verbinden zur Datenbank würde nicht gehen, da wir den Port vom AWS nicht eröffnet hat. Das andere Problem wäre, dass wir den Port vom Kubernetes nicht veröffentlichen. mann musste in der db.yml den Port eröffnen und im AWS eröffnen, damit wir verbinden könnten
+
+#### Master mit neuer Ip Adresse
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/f1f593fe-72a7-47dd-a0e3-f7781fd4b4b6)
