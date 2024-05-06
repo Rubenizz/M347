@@ -511,3 +511,19 @@ Das verbinden zur Datenbank würde nicht gehen, da wir den Port vom AWS nicht er
 #### Master mit neuer Ip Adresse
 
 ![image](https://github.com/Rubenizz/M347/assets/112400838/f1f593fe-72a7-47dd-a0e3-f7781fd4b4b6)
+
+## KN08
+
+### DB erstellen
+
+#### DB erstellt
+![image](https://github.com/Rubenizz/M347/assets/112400838/83b48c4f-06b3-4ed3-84dc-4836c5ec3e97)
+
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/d973a5a1-b8d5-4f52-b289-6596a3be310c)
+
+#### Skript hinzugefügt
+![image](https://github.com/Rubenizz/M347/assets/112400838/3eef7496-0aa0-44dd-914c-1679c3cdad07)
+
+
+
