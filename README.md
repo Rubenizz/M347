@@ -519,11 +519,19 @@ Das verbinden zur Datenbank würde nicht gehen, da wir den Port vom AWS nicht er
 #### DB erstellt
 ![image](https://github.com/Rubenizz/M347/assets/112400838/83b48c4f-06b3-4ed3-84dc-4836c5ec3e97)
 
-
+#### Connection gemacht
 ![image](https://github.com/Rubenizz/M347/assets/112400838/d973a5a1-b8d5-4f52-b289-6596a3be310c)
 
-#### Skript hinzugefügt
+#### Daten reingeladet
 ![image](https://github.com/Rubenizz/M347/assets/112400838/3eef7496-0aa0-44dd-914c-1679c3cdad07)
+
+#### Frontend starten
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/2a76efab-021d-45c1-9b12-5951390fb4d1)
+
+#### Applikation in Container packen
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/b2931417-85fe-4fc4-8c30-3179ded9bab9)
 
 
 
