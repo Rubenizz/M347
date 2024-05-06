@@ -533,5 +533,9 @@ Das verbinden zur Datenbank würde nicht gehen, da wir den Port vom AWS nicht er
 
 ![image](https://github.com/Rubenizz/M347/assets/112400838/b2931417-85fe-4fc4-8c30-3179ded9bab9)
 
+![image](https://github.com/Rubenizz/M347/assets/112400838/c887d8c7-69f8-47e4-8ef8-a11ff5571f70)
 
+### Swagger
+
+![image](https://github.com/Rubenizz/M347/assets/112400838/f6e5f896-1708-47c0-bb89-2e546aa9932f)
 
